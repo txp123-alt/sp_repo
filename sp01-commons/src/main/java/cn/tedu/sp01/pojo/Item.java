@@ -4,14 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**Õâ¸öÀàÖĞ°üº¬ÉÌÆ·µÄ»ù±¾ĞÅÏ¢*/
+/**è¿™ä¸ªç±»ä¸­åŒ…å«å•†å“çš„åŸºæœ¬ä¿¡æ¯*/
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Item {
-	//²âÊÔ°æ±¾
-	private Integer id;      //ÉÌÆ·µÄId
-	//²âÊÔ111111111111111111
-	private String name;	 //ÉÌÆ·µÄÃû×Ö
-	private Integer number;  //ÉÌÆ·µÄ¿â´æ
+	//æµ‹è¯•ç‰ˆæœ¬
+	private Integer id;      //å•†å“çš„Id
+	//æµ‹è¯•111111111111111111
+        //2222222 
+	private String name;	 //å•†å“çš„åå­—
+	private Integer number;  //å•†å“çš„åº“å­˜
 }
