@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Item {
+	//测试版本
 	private Integer id;      //商品的Id
 	private String name;	 //商品的名字
 	private Integer number;  //商品的库存
