@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: order-service
+    
+#server:
+#  port: 8201
+
+#连接eureka注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+
+#启用hystrix(降级和熔断)默认值为false      
+feign:
+  hystrix:
+    enabled: true
+
+#配置暴露的端点    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+#服务器集群配置
+#--server.port=8201
+#--server.port=8202
+---
+spring:
+  profiles: order1
+  
+server:
+  port: 8201
+
+---
+spring:
+  profiles: order2
+  
+server:
+  port: 8202
+
