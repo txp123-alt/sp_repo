@@ -10,25 +10,25 @@ spring:
 #server:
 #  port: 8201
 
-#杩炴帴eureka娉ㄥ唽涓績
+
 eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
 
-#鍚敤hystrix(闄嶇骇鍜岀啍鏂�)榛樿鍊间负false      
+    
 feign:
   hystrix:
     enabled: true
 
-#閰嶇疆鏆撮湶鐨勭鐐�    
+
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream
 
-#鏈嶅姟鍣ㄩ泦缇ら厤缃�
+
 #--server.port=8201
 #--server.port=8202
 ---
